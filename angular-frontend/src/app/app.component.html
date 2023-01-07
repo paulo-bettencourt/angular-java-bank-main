@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <base href="/">
+</head>
+<body>
+<header>
+    <hr>
+    <h1>Angular Bank</h1>
+    <hr>
+</header>
+    <nav class="d-flex justify-content-center">
+        <a routerLink="/add-client" routerLinkActive="active" class="nav-button">Add clients</a>
+        <a routerLink="/clients-list" routerLinkActive="active" class="nav-button">Client list</a>
+        <a routerLink="/delete-client" routerLinkActive="active" class="nav-button">Delete client</a>
+        <!-- <a routerLink="/update-client" routerLinkActive="active" class="nav-button">Update client</a> -->
+    </nav>
+</body>
+</html>
+
+<router-outlet></router-outlet>
+
+

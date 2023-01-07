@@ -1,0 +1,54 @@
+<hr>
+<h1>Update Clients</h1>
+
+<!-- <form [formGroup]="profileForm">
+
+    <label for="name">Name: </label>
+    <input id="name" type="text" formControlName="name"> 
+    <br>
+    <label for="address">Address: </label>
+    <input id="address" type="text" formControlName="address">
+    <br>
+    <label for="telephone">Telephone: </label>
+    <input id="telephone" type="text" formControlName="telephone">
+    <br>
+    <label for="account">Account: </label>
+    <input id="account" type="text" formControlName="account">
+    <br>
+  
+    <p>Complete the form to enable button.</p>
+  <button type="submit" (click)="onSubmit($event)">Update</button>
+  
+  </form> -->
+
+  <form [formGroup]="profileForm">
+  <table class="table ">
+    <th>
+      <tr>
+        <td>ID:</td>
+        <td><input id="name" [(ngModel)]="client.id" type="text" formControlName="id" class="input"><br></td>
+      </tr>
+      <tr>
+        <td>Name:</td>
+        <td><input id="name" [(ngModel)]="client.name" type="text" formControlName="name" class="input"><br></td>
+      </tr>
+      <tr>
+        <td>Address:</td>
+        <td><input id="address" [(ngModel)]="client.address"  type="text" formControlName="address" class="input"></td>
+      </tr>
+      <tr>
+        <td>Telephone:</td>
+        <td><input id="telephone" [(ngModel)]="client.telephone" type="text" formControlName="telephone" class="input"></td>
+      </tr>
+      <tr>
+        <td>Account:</td>
+        <td><input id="account" [(ngModel)]="client.account" type="text" formControlName="account" class="input"></td>
+      </tr>
+          
+    </th>
+  </table>
+  <br>
+  <div class="d-flex justify-content-center">
+    <button type="button" (click)="onSubmit($event)" class="btn btn-primary btn-block btnbtn">Update</button>
+  </div>
+</form>

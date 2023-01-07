@@ -1,0 +1,24 @@
+<hr>
+<h1>Client List</h1>
+
+  <table  class="table-client-list ">
+    <tr>
+      <th>Client number</th>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Telephone</th>
+      <th>Show</th>
+      <th>Edit client</th>
+      <th>Delete client</th>
+    </tr>
+    <tr *ngFor="let client of clients; let i = index; trackBy: trackByFn">
+      <td>{{client.id}}</td>
+      <td>{{client.name}}</td>
+      <td>{{client.address}}</td>
+      <td>{{client.telephone}}</td>
+      <td><button class="button-client-list btn-success">View</button></td>
+      <td><a routerLink="/update-client/" [queryParams]="{id: i + 1}" routerLinkActive="active" class="nav-button"><button class="button-client-list btn-warning">Edit</button></a></td>
+      <td><button class="button-client-list btn-danger" (click)="deleteClient(client.id); refreshPeople()">Delete</button></td>
+    </tr>
+    <tr>
+  </table>

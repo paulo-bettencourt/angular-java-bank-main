@@ -1,0 +1,14 @@
+<hr>
+<h1>Delete clients</h1>
+
+<div class="column small-12 large-2 d-flex justify-content-center">
+  <select [(ngModel)]="client.name" class="btn btn-danger dropdown-toggle btn-lg btn-delete" (ngModelChange)="deleteClient(this); refreshPeople()" value="B">
+    <option value="undefined" selected disabled>Select client to delete</option>
+    <option *ngFor="let client of clients; trackBy: trackByFn" 
+    value="{{ client.id }}"
+    >
+  {{ client.id }} - {{client.name}} 
+</option>
+  </select>
+</div>
+

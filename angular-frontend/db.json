@@ -1,0 +1,18 @@
+{
+  "clients": [
+    {
+      "name": "Jane Doe John Doe",
+      "address": "California",
+      "telephone": "9172773",
+      "account": "Savings",
+      "id": 1
+    },
+    {
+      "name": "Paulo Lemos",
+      "address": "Açores",
+      "telephone": "69",
+      "account": "Nice",
+      "id": 3
+    }
+  ]
+}

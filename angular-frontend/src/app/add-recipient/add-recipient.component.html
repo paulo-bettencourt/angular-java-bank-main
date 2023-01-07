@@ -1,0 +1,38 @@
+<hr>
+<h1>Add clients</h1>
+
+<table class="table ">
+  <th>
+    <tr>
+      <td>Name:</td>
+      <td><input [(ngModel)]="recipient.name" class="input"/><br></td>
+    </tr>
+    <tr>
+      <td>Address:</td>
+      <td><input [(ngModel)]="recipient.address" class="input"/></td>
+    </tr>
+    <tr>
+      <td>Telephone:</td>
+      <td><input [(ngModel)]="recipient.telephone" class="input"/></td>
+    </tr>
+    <tr>
+      <td>Account:</td>
+      <td>
+        <select [(ngModel)]="recipient.account" class="btn btn-light dropdown-toggle btn-lg btn-delete">
+          <option value="undefined" selected disabled>Select type of account</option>
+          <option class="input" value="Savings">Savings</option>
+          <option class="input" value="Checkings">Checkings</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Deposit ($):</td>
+      <td><input [(ngModel)]="recipient.deposit" class="input"/></td>
+    </tr>
+    <tr>
+  </th>
+</table>
+<br>
+<div class="d-flex justify-content-center">
+  <button (click)="addRecipient()" type="button" class="btn btn-primary btn-block btnbtn">Add Client</button>
+</div>
